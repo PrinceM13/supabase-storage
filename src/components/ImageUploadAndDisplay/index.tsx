@@ -105,7 +105,7 @@ export default function ImageUploadAndDisplay() {
       <div>
         {url ? (
           <Image
-            src={url}
+            src={`${url}?t=${Date.now().toString()}`}
             alt="Uploaded"
             width={300}
             height={300}
